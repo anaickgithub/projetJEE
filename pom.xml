@@ -12,9 +12,6 @@
         <module>projetjee-assets</module>
         <module>projetjee-core</module>
         <module>projetjee-web</module>
-        <module>projetjee-assets</module>
-        <module>projetjee-core</module>
-        <module>projetjee-web</module>
     </modules>
 
 
