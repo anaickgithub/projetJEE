@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#title{
+	margin-top: 100px;
+	margin-bottom: 70px; 
+}
+table{
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+table th{
+	text-align: center;
+}
+table td{
+	width: 50%;
+}
+table td:hover{
+	background-color: #F4F4F4;
+}
+table td a{
+	color: black;
+}
+table td a:hover{
+	color: black;
+}
+.glyright{
+	margin-right: 5px;
+}
+#formAdd{
+	display: none;
+}
+#btnsubmit{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+}

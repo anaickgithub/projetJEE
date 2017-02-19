@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raccourci URL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+  </head>
+
+  <body>
+
+    <section class="container content-page">
+
+      <header id="title" class="text-center">
+        <h1>Raccourcisseur d'URL</h1>
+      </header>
+
+      <div id="divbtnadd" class="text-center">
+        <button type="button" class="btn-lg btn btn-primary" onClick="showFormAddURL()"><span class="glyright glyphicon glyphicon-plus"></span>Ajouter une URL</button>
+      </div>
+
+      <form id="formAdd" action="addURL" method="post">
+        <div class="col-sm-6">
+          <label for="newURLori">URL d'origine :</label>
+          <input id="newURLori" type="text" class="form-control" name="newURLori" required/>
+        </div>
+         <div class="col-sm-6">
+          <label for="newURLrac">URL raccourci :</label>
+          <input id="newURLrac" type="text" class="form-control" name="newURLrac" required/>
+        </div>
+        <div class="text-center">
+          <button id="btnsubmit" type="submit" class="btn-md btn btn-primary">Ajouter</button>
+        </div>
+      </form>
+
+      <table class="table table-bordered">
+        <thead class="text-center">
+          <tr>
+            <th>
+              URL d'origine
+            </th>
+            <th>
+              URL raccourci
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="urlori">
+              <a href="#" target="_blank">URL d'origine1</a>
+            </td>
+            <td class="urlrac">
+              <a href="#" target="_blank">URL raccourci1</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="urlori">
+              <a href="#" target="_blank">URL d'origine3</a>
+            </td>
+            <td class="urlrac">
+              <a href="#" target="_blank">URL raccourci2</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="urlori">
+              <a href="#" target="_blank">URL d'origine3</a>
+            <td class="urlrac">
+              <a href="#" target="_blank">URL raccourci3</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+  </body>
+</html>
+
+
