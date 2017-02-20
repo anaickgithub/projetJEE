@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by nicol on 10/02/2017.
  */
-public interface URLPersoDao extends JpaRepository<URLPerso, String> {
+public interface URLPersoDao extends JpaRepository<URLPerso, Long> {
 
     List<URLPerso> findAll();
 
