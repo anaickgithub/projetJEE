@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5e4323-b4da-4154-ad7a-cfbbb38c60a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetjee-assets/projetjee-assets.iml" afterPath="$PROJECT_DIR$/projetjee-assets/projetjee-assets.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetjee-core/projetjee-core.iml" afterPath="$PROJECT_DIR$/projetjee-core/projetjee-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetjee-web/projetjee-web.iml" afterPath="$PROJECT_DIR$/projetjee-web/projetjee-web.iml" />
-    </list>
+    <list default="true" id="fb5e4323-b4da-4154-ad7a-cfbbb38c60a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/projetjee-assets/target/" />
     <ignored path="$PROJECT_DIR$/projetjee-web/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,6 +98,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Projet_JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetjee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetjee-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetjee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_JEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetjee-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -598,12 +626,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487547480535</updated>
       <workItem from="1487547482273" duration="6416000" />
-      <workItem from="1487575598041" duration="534000" />
+      <workItem from="1487575598041" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6950000" />
+    <option name="totallyTimeSpent" value="7008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="1932" height="573" extended-state="1" />
