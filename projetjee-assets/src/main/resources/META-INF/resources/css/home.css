@@ -3,7 +3,7 @@
 	padding: 0;
 }
 #title{
-	margin-top: 100px;
+	margin-top: 60px;
 	margin-bottom: 70px; 
 }
 table{
@@ -21,6 +21,8 @@ table td:hover{
 }
 table td a{
 	color: black;
+	display: inline-block;
+	width: 90%;
 }
 table td a:hover{
 	color: black;
@@ -35,4 +37,12 @@ table td a:hover{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	width: 200px;
+}
+.gly{
+	color: red;
+	display: inline-block;
+	padding-top: 2px;
+	width: 10%;
+	vertical-align: top;
+	text-align: right;
 }
