@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Projet_JEE.iml" filepath="$PROJECT_DIR$/Projet_JEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetjee.iml" filepath="$PROJECT_DIR$/projetjee.iml" />
       <module fileurl="file://$PROJECT_DIR$/projetjee-assets/projetjee-assets.iml" filepath="$PROJECT_DIR$/projetjee-assets/projetjee-assets.iml" />
       <module fileurl="file://$PROJECT_DIR$/projetjee-core/projetjee-core.iml" filepath="$PROJECT_DIR$/projetjee-core/projetjee-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/projetjee-web/projetjee-web.iml" filepath="$PROJECT_DIR$/projetjee-web/projetjee-web.iml" />
