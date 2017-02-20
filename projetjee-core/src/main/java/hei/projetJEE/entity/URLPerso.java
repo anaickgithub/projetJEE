@@ -13,6 +13,7 @@ public class URLPerso {
     static String newURL="";
 
     @Id
+    private long id;
     private String url;
     private String urlCourt;
     private boolean perso;
@@ -25,6 +26,14 @@ public class URLPerso {
     }
 
     // Getters/Setters
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getUrl() {
         return url;
     }
@@ -77,10 +86,5 @@ public class URLPerso {
         }
         newURL=str;
     }
-
-
-
-
-
 
 }
