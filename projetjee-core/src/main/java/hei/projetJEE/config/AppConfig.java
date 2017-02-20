@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Created by nicol on 20/02/2017.
+ * Created by nicol on 10/02/2017.
  */
 @Configuration
 @ComponentScan(basePackages = "hei.projetJEE.service")
