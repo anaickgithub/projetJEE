@@ -38,11 +38,17 @@ table td a:hover{
 	margin-bottom: 20px;
 	width: 200px;
 }
-.gly{
-	color: red;
+.deleteURL{
 	display: inline-block;
-	padding-top: 2px;
 	width: 10%;
 	vertical-align: top;
 	text-align: right;
+}
+.gly{
+	color: red;
+	padding-top: 2px;
+}
+.btnremove{
+	border: 0px;
+	background-color: white;
 }
