@@ -15,8 +15,6 @@ public interface URLPersoDao extends JpaRepository<URLPerso, Long> {
 
     URLPerso findOneByUrl(String url);
 
-    void save();
-
     int deleteById(int id);
 
     @Query("SELECT u.urlCourt FROM URLPerso u where u.perso=false ORDER BY u.id DESC LIMIT 0,1")
