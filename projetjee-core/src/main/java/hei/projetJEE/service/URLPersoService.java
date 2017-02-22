@@ -17,6 +17,6 @@ public interface URLPersoService {
 
     int deleteById(int id);
 
-    String getLastURLPerso();
+    /*String getLastURLPerso();*/
 
 }
