@@ -1,6 +1,6 @@
-package hei.projetJEE.service;
+package hei.projetjee.service;
 
-import hei.projetJEE.entity.URLPerso;
+import hei.projetjee.entity.URLPerso;
 
 import java.util.List;
 

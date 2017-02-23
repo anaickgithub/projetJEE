@@ -1,8 +1,6 @@
-package hei.projetJEE.config;
+package hei.projetjee.config;
 
 import com.jolbox.bonecp.BoneCPDataSource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -21,7 +19,7 @@ import java.util.Properties;
  * Created by nicol on 10/02/2017.
  */
 @Configuration
-@EnableJpaRepositories(basePackages = "hei.projetJEE.dao")
+@EnableJpaRepositories(basePackages = "hei.projetjee.dao")
 public class DBConfig {
 
     @Bean(destroyMethod = "close")
@@ -65,7 +63,7 @@ public class DBConfig {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
         factory.getJpaPropertyMap().put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        factory.setPackagesToScan("hei.projetJEE.entity");
+        factory.setPackagesToScan("hei.projetjee.entity");
         factory.setDataSource(dataSource);
         factory.afterPropertiesSet();
         return factory.getObject();

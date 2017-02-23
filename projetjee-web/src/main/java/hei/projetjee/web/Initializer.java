@@ -1,18 +1,13 @@
 package hei.projetjee.web;
 
-import hei.projetJEE.config.AppConfig;
-import hei.projetJEE.config.DBConfig;
+import hei.projetjee.config.AppConfig;
+import hei.projetjee.config.DBConfig;
 import hei.projetjee.web.config.WSConfig;
 import org.apache.cxf.transport.servlet.CXFServlet;
-import org.springframework.context.ApplicationContext;
-import org.springframework.web.context.ContextLoaderListener;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
 import javax.servlet.ServletRegistration.Dynamic;
 
 /**
