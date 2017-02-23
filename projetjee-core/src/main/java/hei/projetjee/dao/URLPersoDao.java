@@ -14,6 +14,4 @@ public interface URLPersoDao extends JpaRepository<URLPerso, Long> {
 
     URLPerso findOneByUrl(String url);
 
-    int deleteById(int id);
-
 }
