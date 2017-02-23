@@ -20,13 +20,13 @@ import javax.servlet.ServletRegistration.Dynamic;
  */
 public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    /*@Override
+    @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         super.onStartup(servletContext);
         Dynamic servlet = servletContext.addServlet("cxfServlet", new CXFServlet());
         servlet.setLoadOnStartup(1);
         servlet.addMapping("/*");
-    }*/
+    }
 
     @Override
     protected Class<?>[] getRootConfigClasses() {

@@ -11,13 +11,11 @@ import java.util.List;
  */
 public interface URLPersoDao extends JpaRepository<URLPerso, Long> {
 
-    List<URLPerso> findAll();
+    @Query(value="SELECT * FROM URLPerso where perso=false ORDER BY id DESC Limit 0,1" , nativeQuery=true)
+    URLPerso getLastURLPerso();
 
     URLPerso findOneByUrl(String url);
 
     int deleteById(int id);
-/*
-    @Query("SELECT u.urlCourt FROM URLPerso u where u.perso=false ORDER BY u.id DESC LIMIT 0,1")
-    String getLastURLPerso();*/
 
 }
