@@ -27,6 +27,9 @@ public class HomeController{
 
     @RequestMapping({"/","/home"})
     public String goHome(ModelMap model){
+        URLPerso lastURLPerso = urlPersoservice.getLastURLPerso();
+        if(lastURLPerso==null) URLPerso.newURL ="`";
+        else URLPerso.newURL = lastURLPerso.getUrlCourt();
         LOGGER.info("Je retourne la liste des url");
         List<URLPerso> listurlperso = urlPersoservice.findAll();
         model.addAttribute("listurlperso",listurlperso);
@@ -39,13 +42,19 @@ public class HomeController{
         return "redirect:../home";
     }
 
-
-    // ------------- A FAIRE ------------- //
-
     @RequestMapping(value = "/addurl", method = RequestMethod.POST)
-    public String addURL(@ModelAttribute("url") URLPerso urlperso){
-        LOGGER.info("J'ajoute un url");
-        urlPersoservice.save(urlperso);
+    public String addURL(@ModelAttribute("url") URLPerso urlPerso){
+        URLPerso check = urlPersoservice.findOneByUrl(urlPerso.getUrl());
+        if(check==null) {
+            if (urlPerso.getUrlCourt() != "" && urlPerso.getUrlCourt() != null) urlPerso.setPerso(true);
+            else {
+                urlPerso.raccourcir();
+                urlPerso.setUrlCourt(URLPerso.newURL);
+                urlPerso.setPerso(false);
+            }
+            LOGGER.info("J'ajoute un url");
+            urlPersoservice.save(urlPerso);
+        }
         return "redirect:home";
     }
 
