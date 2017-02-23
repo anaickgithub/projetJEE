@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 public class URLPerso {
 
-    static String newURL="";
+    public static String newURL="a";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

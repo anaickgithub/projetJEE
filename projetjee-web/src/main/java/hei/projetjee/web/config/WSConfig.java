@@ -20,26 +20,26 @@ import java.util.List;
  */
 @Configuration
 @ComponentScan(basePackages = "hei.projetjee.web.controller")
-//@ImportResource({"classpath:META-INF/cxf/cxf.xml"})
+@ImportResource({"classpath:META-INF/cxf/cxf.xml"})
 public class WSConfig {
 
-    /*@Inject
-    private Bus cxfBus;*/
+    @Inject
+    private Bus cxfBus;
 
     @Inject
     private List<RestController> controllers;
 
-    /*@Bean
+    @Bean
     public Server jaxrsServer(JacksonJsonProvider jsonProvider){
         JAXRSServerFactoryBean sf = new JAXRSServerFactoryBean();
-        List<Object> serviceBeans = new ArrayList<>();
+        List<Object> serviceBeans = new ArrayList<Object>();
         serviceBeans.addAll(controllers);
         sf.setServiceBeans(serviceBeans);
         sf.setProviders(Arrays.asList(jsonProvider));
         sf.setAddress("/");
         sf.setBus(cxfBus);
         return sf.create();
-    }*/
+    }
 
     @Bean
     public JacksonJsonProvider jsonProvider() {

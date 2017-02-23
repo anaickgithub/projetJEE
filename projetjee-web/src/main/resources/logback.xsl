@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE logback>
-<configuration>
+<logback>
 
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -10,7 +10,7 @@
 
 
 
-    <logger name="hei.projetJEE">
+    <logger name="hei.tp06">
         <level value="debug" />
     </logger>
 
@@ -20,4 +20,4 @@
         <appender-ref ref="Console" />
     </root>
 
-</configuration>
+</logback>

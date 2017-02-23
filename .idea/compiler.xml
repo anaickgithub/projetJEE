@@ -15,7 +15,7 @@
       <module name="projetjee" target="1.5" />
       <module name="projetjee-assets" target="1.5" />
       <module name="projetjee-core" target="1.5" />
-      <module name="projetjee-web" target="1.7" />
+      <module name="projetjee-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -36,7 +36,5 @@ public class URLPersoServiceImpl implements URLPersoService{
         return urlPersoDao.deleteById(id);
     }
 
-    /*public String getLastURLPerso() {
-        return urlPersoDao.getLastURLPerso();
-    }*/
+    public URLPerso getLastURLPerso() { return urlPersoDao.getLastURLPerso(); }
 }
