@@ -22,14 +22,14 @@
         <button type="button" class="btn-lg btn btn-primary" onClick="showFormAddURL()"><span class="glyright glyphicon glyphicon-plus"></span>Ajouter une URL</button>
       </div>
 
-      <form id="formAdd" action="addURL" method="post">
+      <form id="formAdd" action="addurl" modelAttribute="newUrl" method="post">
         <div class="col-sm-6">
           <label for="newURLori">URL d'origine :</label>
-          <input id="newURLori" type="text" class="form-control" name="newURLori" required/>
+          <input id="newURLori" type="text" class="form-control" name="url" required/>
         </div>
          <div class="col-sm-6">
           <label for="newURLrac">(optionnel) URL perso :</label>
-          <input id="newURLrac" type="text" class="form-control" name="newURLrac"/>
+          <input id="newURLrac" type="text" class="form-control" name="urlCourt"/>
         </div>
         <div class="text-center">
           <button id="btnsubmit" type="submit" class="btn-md btn btn-primary">Ajouter</button>

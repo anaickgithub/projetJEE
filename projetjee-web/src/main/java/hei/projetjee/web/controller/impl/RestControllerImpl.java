@@ -39,10 +39,4 @@ public class RestControllerImpl implements RestController {
         return newUrl;
     }
 
-    @GET
-    @Path("/list/lasturl")
-    public String lastURL() {
-        URLPerso.newURL = urlPersoService.getLastURLPerso().getUrlCourt();
-        return URLPerso.newURL;
-    }
 }
