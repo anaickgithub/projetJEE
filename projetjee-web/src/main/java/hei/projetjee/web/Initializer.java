@@ -3,6 +3,7 @@ package hei.projetjee.web;
 import hei.projetjee.config.AppConfig;
 import hei.projetjee.config.DBConfig;
 import hei.projetjee.web.config.WSConfig;
+import hei.projetjee.web.config.WebConfig;
 import org.apache.cxf.transport.servlet.CXFServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -20,7 +21,7 @@ public class Initializer extends AbstractAnnotationConfigDispatcherServletInitia
         super.onStartup(servletContext);
         Dynamic servlet = servletContext.addServlet("cxfServlet", new CXFServlet());
         servlet.setLoadOnStartup(1);
-        servlet.addMapping("/*");
+        servlet.addMapping("/api/*");
     }
 
     @Override
@@ -31,7 +32,7 @@ public class Initializer extends AbstractAnnotationConfigDispatcherServletInitia
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[] {};
+        return new Class<?>[] {WebConfig.class};
     }
 
 

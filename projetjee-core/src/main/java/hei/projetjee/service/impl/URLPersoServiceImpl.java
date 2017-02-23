@@ -2,7 +2,6 @@ package hei.projetjee.service.impl;
 
 import hei.projetjee.dao.URLPersoDao;
 import hei.projetjee.entity.URLPerso;
-import hei.projetjee.service.URLPersoService;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
@@ -15,7 +14,7 @@ import java.util.List;
 
 @Named
 @Transactional
-public class URLPersoServiceImpl implements URLPersoService{
+public class URLPersoServiceImpl implements hei.projetjee.service.URLPersoService {
 
     @Inject
     private URLPersoDao urlPersoDao;
@@ -32,8 +31,8 @@ public class URLPersoServiceImpl implements URLPersoService{
         urlPersoDao.save(urlPerso);
     }
 
-    public int deleteById(int id) {
-        return urlPersoDao.deleteById(id);
+    public void delete(long id) {
+        urlPersoDao.delete(id);
     }
 
     public URLPerso getLastURLPerso() { return urlPersoDao.getLastURLPerso(); }

@@ -23,13 +23,13 @@ public class RestControllerImpl implements RestController {
     private URLPersoService urlPersoService;
 
     @GET
-    @Path("/api/list")
+    @Path("/list")
     public List<URLPerso> getList() {
         return urlPersoService.findAll();
     }
 
     @POST
-    @Path("/api")
+    @Path("/")
     public URLPerso add(URL url) {
 
         URLPerso newUrl = new URLPerso(url.getUrl());
@@ -40,7 +40,7 @@ public class RestControllerImpl implements RestController {
     }
 
     @GET
-    @Path("/")
+    @Path("/list/lasturl")
     public String lastURL() {
         URLPerso.newURL = urlPersoService.getLastURLPerso().getUrlCourt();
         return URLPerso.newURL;

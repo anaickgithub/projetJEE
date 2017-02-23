@@ -1,6 +1,7 @@
 package hei.projetjee.service;
 
 import hei.projetjee.entity.URLPerso;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ public interface URLPersoService {
 
     void save(URLPerso urlPerso);
 
-    int deleteById(int id);
+    void delete(long id);
 
     URLPerso getLastURLPerso();
 

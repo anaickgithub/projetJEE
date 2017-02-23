@@ -4,7 +4,7 @@
 }
 #title{
 	margin-top: 60px;
-	margin-bottom: 70px; 
+	margin-bottom: 70px;
 }
 table{
 	margin-bottom: 50px;
@@ -13,18 +13,19 @@ table{
 table th{
 	text-align: center;
 }
-table td{
+.urlori, .urlrac{
 	width: 50%;
 }
-table td:hover{
+.supp{
+	text-align: center;
+}
+.urlori:hover, .urlrac:hover{
 	background-color: #F4F4F4;
 }
-table td a{
+.urlori a, .urlrac a{
 	color: black;
-	display: inline-block;
-	width: 90%;
 }
-table td a:hover{
+.urlori a:hover, .urlrac a:hover{
 	color: black;
 }
 .glyright{
@@ -38,17 +39,11 @@ table td a:hover{
 	margin-bottom: 20px;
 	width: 200px;
 }
-.deleteURL{
-	display: inline-block;
-	width: 10%;
-	vertical-align: top;
-	text-align: right;
-}
 .gly{
 	color: red;
 	padding-top: 2px;
 }
 .btnremove{
 	border: 0px;
-	background-color: white;
+	background: none;
 }
