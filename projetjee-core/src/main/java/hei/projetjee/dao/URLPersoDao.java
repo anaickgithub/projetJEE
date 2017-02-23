@@ -1,10 +1,8 @@
-package hei.projetJEE.dao;
+package hei.projetjee.dao;
 
-import hei.projetJEE.entity.URLPerso;
+import hei.projetjee.entity.URLPerso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
-import java.util.List;
 
 /**
  * Created by nicol on 10/02/2017.

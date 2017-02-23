@@ -1,7 +1,5 @@
-package hei.projetJEE.config;
+package hei.projetjee.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +11,7 @@ import java.util.Properties;
  * Created by nicol on 10/02/2017.
  */
 @Configuration
-@ComponentScan(basePackages = "hei.projetJEE.service")
+@ComponentScan(basePackages = "hei.projetjee.service")
 public class AppConfig
 {
     @Bean

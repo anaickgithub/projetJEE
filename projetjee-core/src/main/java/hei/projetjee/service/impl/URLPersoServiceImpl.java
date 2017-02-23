@@ -1,8 +1,8 @@
-package hei.projetJEE.service.impl;
+package hei.projetjee.service.impl;
 
-import hei.projetJEE.dao.URLPersoDao;
-import hei.projetJEE.entity.URLPerso;
-import hei.projetJEE.service.URLPersoService;
+import hei.projetjee.dao.URLPersoDao;
+import hei.projetjee.entity.URLPerso;
+import hei.projetjee.service.URLPersoService;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;

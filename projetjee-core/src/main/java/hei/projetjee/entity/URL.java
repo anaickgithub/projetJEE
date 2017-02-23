@@ -1,4 +1,4 @@
-package hei.projetJEE.entity;
+package hei.projetjee.entity;
 
 
 /**

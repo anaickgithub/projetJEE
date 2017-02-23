@@ -1,8 +1,8 @@
 package hei.projetjee.web.controller.impl;
 
-import hei.projetJEE.entity.URL;
-import hei.projetJEE.entity.URLPerso;
-import hei.projetJEE.service.URLPersoService;
+import hei.projetjee.entity.URL;
+import hei.projetjee.entity.URLPerso;
+import hei.projetjee.service.URLPersoService;
 import hei.projetjee.web.controller.RestController;
 
 import javax.inject.Inject;
