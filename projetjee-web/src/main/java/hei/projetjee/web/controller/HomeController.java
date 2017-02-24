@@ -53,6 +53,12 @@ public class HomeController{
             if (urlPerso.getUrlCourt() != "" && urlPerso.getUrlCourt() != null) urlPerso.setPerso(true);
             else {
                 urlPerso.raccourcir();
+                checkUrlPerso = urlPersoservice.findOneByUrlCourt(urlPerso.newURL);
+                while(checkUrlPerso!=null){
+                    urlPerso.raccourcir();
+                    checkUrlPerso = urlPersoservice.findOneByUrlCourt(urlPerso.newURL);
+                }
+
                 urlPerso.setUrlCourt(URLPerso.newURL);
                 urlPerso.setPerso(false);
             }
