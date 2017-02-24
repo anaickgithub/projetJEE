@@ -60,7 +60,10 @@ public class HomeController{
 
     @RequestMapping(value="/{urlCourt}")
     public String goToURL(@PathVariable("urlCourt") String urlCourt){
-        String url = urlPersoservice.findOneByUrlCourt(urlCourt).getUrl();
-        return "redirect:"+url;
+
+        URLPerso urlPerso = urlPersoservice.findOneByUrlCourt(urlCourt);
+        if(urlPerso!=null)
+            return "redirect:"+urlPerso.getUrl();
+        else return "redirect:home";
     }
 }
