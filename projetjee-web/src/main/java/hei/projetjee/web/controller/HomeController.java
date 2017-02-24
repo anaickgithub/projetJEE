@@ -43,9 +43,13 @@ public class HomeController{
     }
 
     @RequestMapping(value = "/addurl", method = RequestMethod.POST)
+
     public String addURL(@ModelAttribute("url") URLPerso urlPerso){
-        URLPerso check = urlPersoservice.findOneByUrl(urlPerso.getUrl());
-        if(check==null) {
+        URLPerso checkUrl = urlPersoservice.findOneByUrl(urlPerso.getUrl());
+        URLPerso checkUrlPerso=null;
+        if(urlPerso.getUrlCourt() != "" && urlPerso.getUrlCourt() != null)
+         checkUrlPerso = urlPersoservice.findOneByUrlCourt(urlPerso.getUrlCourt());
+        if(checkUrl==null&&checkUrlPerso==null) {
             if (urlPerso.getUrlCourt() != "" && urlPerso.getUrlCourt() != null) urlPerso.setPerso(true);
             else {
                 urlPerso.raccourcir();
