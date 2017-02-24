@@ -43,7 +43,6 @@ public class HomeController{
     }
 
     @RequestMapping(value = "/addurl", method = RequestMethod.POST)
-
     public String addURL(@ModelAttribute("url") URLPerso urlPerso){
         URLPerso checkUrl = urlPersoservice.findOneByUrl(urlPerso.getUrl());
         URLPerso checkUrlPerso=null;
@@ -74,6 +73,11 @@ public class HomeController{
         URLPerso urlPerso = urlPersoservice.findOneByUrlCourt(urlCourt);
         if(urlPerso!=null)
             return "redirect:"+urlPerso.getUrl();
-        else return "redirect:home";
+        else return "redirect:page404";
+    }
+
+    @RequestMapping("/page404")
+    public String error(){
+        return "page404";
     }
 }
