@@ -14,10 +14,14 @@ public interface URLPersoService {
 
     URLPerso findOneByUrl(String url);
 
+    URLPerso findOneByUrlCourt(String urlCourt);
+
     void save(URLPerso urlPerso);
 
     void delete(long id);
 
     URLPerso getLastURLPerso();
+
+
 
 }

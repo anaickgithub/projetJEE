@@ -58,4 +58,9 @@ public class HomeController{
         return "redirect:home";
     }
 
+    @RequestMapping(value="/{urlCourt}")
+    public String goToURL(@PathVariable("urlCourt") String urlCourt){
+        String url = urlPersoservice.findOneByUrlCourt(urlCourt).getUrl();
+        return "redirect:"+url;
+    }
 }

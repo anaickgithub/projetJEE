@@ -27,6 +27,10 @@ public class URLPersoServiceImpl implements hei.projetjee.service.URLPersoServic
         return urlPersoDao.findOneByUrl(url);
     }
 
+    public URLPerso findOneByUrlCourt(String urlCourt) {
+        return urlPersoDao.findOneByUrlCourt(urlCourt);
+    }
+
     public void save(URLPerso urlPerso) {
         urlPersoDao.save(urlPerso);
     }
